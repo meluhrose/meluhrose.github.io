@@ -9,16 +9,32 @@ main {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1E1014;
     background-color: #F2F7F2;
+    font-size: 18px;
 }
 
 /* Heading Styles */
 h1 {
     font-family: 'Roboto Condensed', sans-serif;
+    color: #1E1014;
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    color: #1E1014;
+    text-transform: uppercase;
+    text-decoration: overline underline;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    color: #1E1014;
+    line-height: 1.5;
 }
 
 /* Link Styles */
@@ -33,7 +49,7 @@ a {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 18px;
     padding: 5px 10px;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
@@ -60,20 +76,32 @@ a:hover {
 section {
     box-sizing: border-box;
     padding: 20px;
-    margin: 20px 0;
-    background-color: #F2F7F2;
+    margin: 40px 0;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px #8E5572;
+    box-shadow: 0 2px 4px #1E1014;
 }
 
 /*Project Styles */
 .projects {
     margin-bottom: 20px;
 }
+
+.project-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 .projects img {
     width: 200px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 .project-1, .project-2, .project-3 {

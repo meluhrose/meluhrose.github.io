@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="myHeader" class="show">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,27 +24,60 @@
 
     <main>
         <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Here are the latest updates and projects I've been working on.</p>
+            <div>
+                <img src="assets/mila-portfolio.jpg" alt="Profile Picture" class="profile-picture"/>
+            </div>
+            <h1>Hi, Welcome to My Portfolio</h1>
+            <p>Here I'm sharing the projects I've been working on this year as I continue to grow my skills and knowledge as a frontend developer.</p>
         </section>
 
         <section id="about">
-            <h2>About Me</h2>
-            <p> I am a student at Noroff Education AS, in the Frontend Development program. I am currently learning how to build responsive and interactive web applications.</p>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>My name is Mila Vasshus and I'm currently studying Frontend Development at Noroff Education AS, where I'm learning how to design and build responsive, user friendly web applications. So far I've gained knowledge in HTML, CSS, JavaScript, UI/UX design, and how to manage projects using Git and GitHub. I love designing and seeing the code come to life.</p>
+            </div>
         </section>
 
         <section id="projects">
+            <div class="projects">
             <h2>Projects</h2>
-            <p>Cross Course Project & JavaScript 1</p>
-            <p>Semester Project 1</p>
-            <p>Project Exam 1</p>
+            <div class="project-1">
+                <p class="project-title">Project Exam 1: HotView Labs</p>
+                <p>
+                    Built a responsive e-commerce site with API-fetched products, shopping cart, and clean UI for my Project Exam 1.
+                </p>
+                <img src="assets/Hotview-labs.png" alt="Homepage HotView Labs" class="project-image"/>
+                <a href="https://meluhrose.github.io/" target="_blank" rel="noopener noreferrer">Link to HotView Labs</a>
+                <a href="https://github.com/meluhrose/meluhrose.github.io" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+            </div>
+            <div class="project-2">
+                <p class="project-title">Cross Course Project & JavaScript 1: Square Eyes</p>
+                <p>
+                    My first full website project, learning HTML, CSS, JavaScript, and essential frontend principles through building a streaming platform.
+                </p>
+                <img src="assets/square-eyes.png" alt="Homepage Square Eyes" class="project-image"/>
+                <a href="https://meluhrose.github.io/SquareEyes/" target="_blank" rel="noopener noreferrer">Link to Square Eyes</a>
+                <a href="https://github.com/meluhrose/SquareEyes" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+            </div>
+            <div class="project-3">
+                <p class="project-title">Semester Project 1: Community Science Museum</p>
+                <p>Designed and built a children-friendly science museum website using Figma, HTML, and CSS with a clean, responsive layout.</p>
+                <img src="assets/community-science-museum.png" alt="Homepage Community Science Museum" class="project-image"/>
+                <a href="https://meluhrose.github.io/Semester-project-1" target="_blank" rel="noopener noreferrer">Link to Community Science Museum</a>
+                <a href="https://github.com/meluhrose/Semester-project-1" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+            </div>
+            </div>
         </section>
 
         <section id="contact">
+            <div class="contact">
             <h2>Contact</h2>
-
+            <p>
+                Whether you’re interested in my work or want to build something together, feel free to reach out!
+            </p>
             <p>Email: <a href="mailto:meluhrose@gmail.com">meluhrose@gmail.com</a></p>
-
+            <p>GitHub: <a href="https://github.com/meluhrose" target="_blank" rel="noopener noreferrer">meluhrose</a></p>
+            </div>
         </section>
     </main>
 

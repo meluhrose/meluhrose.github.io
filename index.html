@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header id="myHeader" class="show">
@@ -27,14 +27,17 @@
             <div>
                 <img src="assets/mila-portfolio.jpg" alt="Profile Picture" class="profile-picture"/>
             </div>
-            <h1>Hi, Welcome to My Portfolio</h1>
-            <p>Here I'm sharing the projects I've been working on this year as I continue to grow my skills and knowledge as a frontend developer.</p>
+            <h1>Mila Vasshus</h1>
+            <p>Hi there, and welcome to my portfolio!</p>
+            <p>
+                Here I'm sharing the projects I've been working on this year as I continue to grow my skills and knowledge as a frontend developer.
+            </p>
         </section>
 
         <section id="about">
             <div class="about-me">
                 <h2>About Me</h2>
-                <p>My name is Mila Vasshus and I'm currently studying Frontend Development at Noroff Education AS, where I'm learning how to design and build responsive, user friendly web applications. So far I've gained knowledge in HTML, CSS, JavaScript, UI/UX design, and how to manage projects using GitHub. I love designing and seeing the code come to life.</p>
+                <p>I'm currently studying Frontend Development at Noroff Education AS, where I'm learning how to design and build responsive, user friendly web applications. So far I've gained knowledge in HTML, CSS, JavaScript, UI/UX design, and how to manage projects using GitHub. I love designing and seeing the code come to life.</p>
             </div>
 
             <div class="stacks">
@@ -43,6 +46,7 @@
                 <img src="assets/css-logo.png" alt="CSS Logo" class="stack-logo"/>
                 <img src="assets/js-logo.png" alt="JavaScript Logo" class="stack-logo"/>
                 <img src="assets/figma-logo.png" alt="Figma Logo" class="stack-logo"/>
+                <img src="assets/github-mark.png" alt="GitHub Logo" class="stack-logo"/>
             </div>
             <div class="documents">
                 <p>
@@ -61,7 +65,7 @@
                 <p>
                     Built a responsive e-commerce site with API-fetched products, shopping cart, and clean UI for my Project Exam 1.
                 </p>
-                <img src="assets/Hotview-labs.png" alt="Homepage HotView Labs" class="project-image"/>
+                <img src="assets/Hotview-labs.png" alt="Homepage HotView Labs" class="project-image" onclick="openLightbox(this.src, this.alt)"/>
                 <a href="https://meluhrose.github.io/" target="_blank" rel="noopener noreferrer">Link to HotView Labs</a>
                 <a href="https://github.com/meluhrose/meluhrose.github.io" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>
@@ -70,14 +74,14 @@
                 <p>
                     My first full website project, learning HTML, CSS, JavaScript, and essential frontend principles through building a streaming platform.
                 </p>
-                <img src="assets/square-eyes.png" alt="Homepage Square Eyes" class="project-image"/>
+                <img src="assets/square-eyes.png" alt="Homepage Square Eyes" class="project-image" onclick="openLightbox(this.src, this.alt)"/>
                 <a href="https://meluhrose.github.io/SquareEyes/" target="_blank" rel="noopener noreferrer">Link to Square Eyes</a>
                 <a href="https://github.com/meluhrose/SquareEyes" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>
             <div class="project-3">
                 <p class="project-title">Semester Project 1: Community Science Museum</p>
                 <p>Designed and built a children-friendly science museum website using Figma, HTML, and CSS with a clean, responsive layout.</p>
-                <img src="assets/community-science-museum.png" alt="Homepage Community Science Museum" class="project-image"/>
+                <img src="assets/community-science-museum.png" alt="Homepage Community Science Museum" class="project-image" onclick="openLightbox(this.src, this.alt)"/>
                 <a href="https://meluhrose.github.io/Semester-project-1" target="_blank" rel="noopener noreferrer">Link to Community Science Museum</a>
                 <a href="https://github.com/meluhrose/Semester-project-1" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>
@@ -95,6 +99,13 @@
             </div>
         </section>
     </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightbox-caption"></div>
+    </div>
 
     <footer>
         <p>&copy; 2025 Milagros Vasshus</p>

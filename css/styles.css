@@ -31,6 +31,13 @@ header {
     box-shadow: 0 2px 4px #1E1014;
 }
 
+header a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+
+}
+
 header nav ul {
     list-style: none;
     padding: 0;

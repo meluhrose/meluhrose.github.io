@@ -35,7 +35,6 @@ header a {
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;
-
 }
 
 header nav ul {
@@ -82,9 +81,7 @@ a:hover {
     background-color: #5F00BA;
     color: white;
     text-decoration: underline;
-
 }
-
 
 /* Home card styles */
 .home {
@@ -140,7 +137,7 @@ section {
     justify-content: center;
 }
 
-/*Stacks Styles */
+/* Stacks Styles */
 .stack-logo {
     width: 60px;
     height: 60px;
@@ -148,7 +145,7 @@ section {
     margin: 10px;
 }
 
-/*Project Styles */
+/* Project Styles */
 .projects {
     margin-bottom: 20px;
     display: flex;
@@ -255,8 +252,14 @@ section {
     margin: 10px 0;
 }
 
+.contact-downloads > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
 
-.email-icon, .github-icon {
+.email-icon, .github-icon, .cover-letter-icon, .resume-icon {
     width: 24px;
     height: 24px;
     flex-shrink: 0;

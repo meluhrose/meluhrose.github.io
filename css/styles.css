@@ -222,3 +222,28 @@ section {
     margin-top: 10px;
     width: fit-content;
 }
+
+
+/* Contact Section Styles */
+.contact-link-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-info, .contact-downloads {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 250px;
+    height: 150px;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #FFF2F1;
+    border-radius: 12px;
+    border: 2px solid #5F00BA;
+    box-shadow: 0 6px 16px rgba(30, 16, 20, 0.12);
+}

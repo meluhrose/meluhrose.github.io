@@ -247,3 +247,22 @@ section {
     border: 2px solid #5F00BA;
     box-shadow: 0 6px 16px rgba(30, 16, 20, 0.12);
 }
+
+.contact-info > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+
+.email-icon, .github-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.contact-downloads {
+    align-items: flex-start;
+    gap: 10px;
+}
